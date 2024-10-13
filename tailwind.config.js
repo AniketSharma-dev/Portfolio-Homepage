@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["*"],
+  content: [
+    './index.html',  // Specify index.html explicitly
+    './src/**/*.{js,css,html}',  // Scan all files inside src folder
+  ],
   theme: {
     extend: {
       colors: {
@@ -17,8 +20,8 @@ module.exports = {
         'text-gradient1': 'linear-gradient(19deg, #ffa200, #ff4949)',
         'text-gradient2': 'linear-gradient(19deg, #3490DE, #ec4899)',
       },
-      
     },
   },
   plugins: [],
 };
+
