@@ -2,6 +2,10 @@
 
 Welcome to my Portfolio Homepage! This project showcases my skills and projects as a web designer and developer. It features a modern design with responsive elements, dark/light mode toggling, and smooth navigation.
 
+## Demo
+[Portfolio Homepage](https://aniketsharma-dev.github.io/Portfolio-Homepage/)
+
+
 ## Table of Contents
 - [Features](#features)
 - [Tech Stack](#tech-stack)
