@@ -31,12 +31,15 @@ function theme() {
   });
 }
 
-var ham = document.querySelector(".hamburger");
-var list = document.querySelector("ul");
+function hamburger() {
+  var ham = document.querySelector(".hamburger");
+  var list = document.querySelector("ul");
 
-ham.addEventListener("click", function () {
-  list.classList.toggle("block");
-  list.classList.toggle("hidden");
-});
+  ham.addEventListener("click", function () {
+    list.classList.toggle("block");
+    list.classList.toggle("hidden");
+  });
+}
 
+hamburger();
 theme();
