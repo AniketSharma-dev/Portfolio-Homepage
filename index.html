@@ -1,118 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style.css" />
-    <link rel="stylesheet" href="./dist/style.css">
+    <!-- <link rel="stylesheet" href="./dist/style.css"> -->
     <link rel="shortcut icon" href="./src/assets/Fav.png" type="image/x-icon" />
     <!-- CDN  -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <title>My Portfolio</title>
-  </head>
+</head>
 
-  <body>
-    <div id="main" class="relative overflow-hidden z-0 bg-black">
-      <div
-        class="fade1 absolute w-[450px] h-[450px] rounded-full bg-custom-gradient top-[-110px] left-[-40px] z-[-100]"
-        style="filter: blur(190px)"
-      ></div>
-      <div
-        class="fade2 absolute w-[450px] h-[450px] rounded-full bg-custom-gradient top-[350px] left-[1000px] z-[-100]"
-        style="filter: blur(250px)"
-      ></div>
+<body class="bg-black">
+    <div id="main" class="relative overflow-hidden z-0">
+        <div class="fade1 absolute w-[450px] h-[450px] rounded-full bg-custom-gradient top-[-110px] left-[-40px] z-[-100]"
+            style="filter: blur(190px)"></div>
+        <div class="fade2 absolute w-[450px] h-[450px] rounded-full bg-custom-gradient top-[350px] left-[1000px] z-[-100]"
+            style="filter: blur(250px)"></div>
 
-      <header class="w-full h-[90px] pt-9">
-        <nav
-          class="flex justify-between items-center px-3 md:px-8 lg:px-16 w-full h-[50px]"
-        >
-          <a href="#index.html">
-            <img
-              class="w-[190px] md:w-[300px]"
-              src="./src/assets/logo.png"
-              alt="Logo"
-            />
-          </a>
-          <ul class="flex justify-center items-center">
-            <li class="text-2xl text-white font-bold px-2 py-4 md:hidden">
-              <i class="ri-menu-4-line"></i>
-            </li>
-            <li class="hidden md:block  md:text-xs lg:text-xl  text-custom-blue font-bold px-2 py-4 relative hover:text-red-300"
-            >
-              <a href>Home</a>
-            </li>
-            <li class="hidden md:block  md:text-xs lg:text-xl  text-custom-blue font-bold px-2 py-4 relative hover:text-red-300"
-            >
-              <a href>About</a>
-            </li>
-            <li class="hidden md:block  md:text-xs lg:text-xl  text-custom-blue font-bold px-2 py-4 relative hover:text-red-300"
-            >
-              <a href>Project</a>
-            </li>
-            <li class="hidden md:block  md:text-xs lg:text-xl  text-custom-blue font-bold px-2 py-4 relative hover:text-red-300"
-            >
-              <a href>Github</a>
-            </li>
-            <li class="hidden md:block  md:text-xs lg:text-xl  text-custom-blue font-bold px-2 py-4 relative hover:text-red-300"
-            >
-              <a href>Portfolio</a>
-            </li>
-            <li class="hidden md:block  md:text-xs lg:text-xl  text-custom-blue font-bold px-2 py-4 relative hover:text-red-300"
-            >
-              <a href>Contact</a>
-            </li>
-            <li class="toggle text-xl text-white font-bold px-2 py-4">
-              <i class="moon ri-moon-fill"></i>
-              <i class="text-black sun hidden ri-sun-line"></i>
-            </li>
-          </ul>
-        </nav>
-      </header>
+        <header class="w-full h-[90px] pt-9">
+            <nav class="flex justify-between items-center px-8 md:px-8 lg:px-16 w-full h-[50px]">
+                <a href="#index.html">
+                    <img class="w-[190px] md:w-[300px]" src="./src/assets/logo.png" alt="Logo" />
+                </a>
+                <div class="flex">
+                    <div class="hamburger relative z-[999] theme text-2xl text-white font-bold px-2 py-4 md:hidden">
+                        <i class="ri-menu-4-line"></i>
+                    </div>
+                    <ul
+                        class="absolute z-50 top-[13%] w-52 md:w-auto bg-[#2C173B] hidden md:bg-transparent md:static md:flex justify-center items-center transition-all duration-300">
+                        <li
+                            class="md:text-xs lg:text-xl text-custom-blue font-bold px-2 py-4 relative hover:text-red-300">
+                            <a href>Home</a>
+                        </li>
+                        <li
+                            class="md:text-xs lg:text-xl text-custom-blue font-bold px-2 py-4 relative hover:text-red-300">
+                            <a href>About</a>
+                        </li>
+                        <li
+                            class="md:text-xs lg:text-xl text-custom-blue font-bold px-2 py-4 relative hover:text-red-300">
+                            <a href>Project</a>
+                        </li>
+                        <li
+                            class="md:text-xs lg:text-xl text-custom-blue font-bold px-2 py-4 relative hover:text-red-300">
+                            <a href>Github</a>
+                        </li>
+                        <li
+                            class="md:text-xs lg:text-xl text-custom-blue font-bold px-2 py-4 relative hover:text-red-300">
+                            <a href>Portfolio</a>
+                        </li>
+                        <li
+                            class="md:text-xs lg:text-xl text-custom-blue font-bold px-2 py-4 relative hover:text-red-300">
+                            <a href>Contact</a>
+                        </li>
+                    </ul>
+                    <div class="toggle text-xl text-white font-bold px-2 py-4">
+                        <i class="moon ri-moon-fill"></i>
+                        <i class="text-black sun hidden ri-sun-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-      <section>
-        <div
-          class="hero flex flex-col md:flex-row md:gap-2 sm:px-10 gap-y-10 md:mt-[30px] gap-0 mt-4 items-center justify-evenly w-full min-h-[70vh]"
-        >
-          <div class="hero-left w-[250px] md:w-[450px]">
-            <h1 class="text-3xl text-[#e5e7eb] md:text-5xl font-bold w-[245px] md:w-[335px] lg:w-[400px] ">
-              Hello! I am a Web
-              <span class="bg-text-gradient1 bg-clip-text text-transparent"
-                >Designer</span
-              >
-              and
-              <span class="bg-text-gradient2 bg-clip-text text-transparent"
-                >Developer</span
-              >
-            </h1>
-            <p
-              class="text-[#e5e7eb] leading-[18px] mt-[20px] text-[12px] mb-[30px] md:text-[15px] w-[245px] md:w-[335px] lg:w-[400px]"
-            >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
-              error culpa ipsa. Sint deleniti esse voluptate fuga ipsum eos
-              corporis maiores rem sequi, iusto iste natus! Unde asperiores
-              expedita deserunt.
-            </p>
-            <button
-              class="flex items-center gap-3 py-[10px] px-[25px] bg-[#f2672e] text-[#f9fafb] border border-[#f2672e] rounded cursor-pointer transition hover:bg-transparent hover:text-[#f2672e]"
-            >
-              Get Started <i class="text-2xl ri-arrow-right-line"></i>
-            </button>
-          </div>
-          <div class="hero-right">
-            <img
-              class="heroImage w-[450px] md:w-[900px]"
-              src="./src/assets/web-development-8734249.png"
-              alt="Hero Image"
-            />
-          </div>
-        </div>
-      </section>
+        <section>
+            <div
+                class="hero flex flex-col md:flex-row md:gap-2 sm:px-10 gap-y-10 md:mt-[30px] gap-0 mt-4 items-center justify-evenly w-full min-h-[70vh]">
+                <div class="hero-left w-[250px] md:w-[450px]">
+                    <h1 class="theme text-3xl text-[#e5e7eb] md:text-5xl font-bold w-[245px] md:w-[335px] lg:w-[400px]">
+                        Hello! I am a Web
+                        <span class="bg-text-gradient1 bg-clip-text text-transparent">Designer</span>
+                        and
+                        <span class="bg-text-gradient2 bg-clip-text text-transparent">Developer</span>
+                    </h1>
+                    <p
+                        class="theme text-[#e5e7eb] leading-[18px] mt-[20px] text-[12px] mb-[30px] md:text-[15px] w-[245px] md:w-[335px] lg:w-[400px]">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Pariatur
+                        error culpa ipsa. Sint deleniti esse voluptate fuga
+                        ipsum eos
+                        corporis maiores rem sequi, iusto iste natus! Unde
+                        asperiores
+                        expedita deserunt.
+                    </p>
+                    <button
+                        class="flex items-center gap-3 py-[10px] px-[25px] bg-[#f2672e] text-[#f9fafb] border border-[#f2672e] rounded cursor-pointer transition hover:bg-transparent hover:text-[#f2672e]">
+                        Get Started <i class="text-2xl ri-arrow-right-line"></i>
+                    </button>
+                </div>
+                <div class="hero-right">
+                    <img class="heroImage w-[450px] md:w-[600px]" src="./src/assets/web-development-8734249.png"
+                        alt="Hero Image" />
+                </div>
+            </div>
+        </section>
     </div>
     <!-- moon and sun -->
 
     <script src="./src/app.js"></script>
-  </body>
+</body>
+
 </html>
